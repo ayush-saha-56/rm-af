@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RM</title>
+</head>
+<body>
+    <button id="btnn">YOLO</button>
+
+    <script>
+      BOT9_DATA = {
+        bot9Id: "5e724c31-5803-4692-bd77-e2853ee2fe2c",
+        forceDisableAutofocus: true,
+        disableWidgetBubble: true,
+        user: {
+          userId: "98143",
+          emailId: "nirvan@b.com",
+          name: "Testing-Nirvan",
+          customAttributes: {
+            token:
+              "vgTuc4eovmCg4HNET0AEFSSNGejpRfkjZAlSpTvPlEKW5zXlhnK8TP3bRO3Ak4k9",
+            uuid: 98143,
+          },
+        },
+      };
+      document.head.appendChild(document.createElement("script")).src =
+        "https://sdk.chatwidget.in/bot.js";
+
+      setTimeout(() => {
+        // temp added so that script gets loaded
+        window.Bot9ChatbotInstance.toggleChatWindow();
+      }, 1000);
+    </script>
+    <script>
+      const btn = document.getElementById("btnn");
+      btn.addEventListener("click", () => {
+        window.Bot9ChatbotInstance.toggleChatWindow();
+      });
+    </script>
+</body>
+</html>
